@@ -1,46 +1,699 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nexora</title>
-    <style>
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background: linear-gradient(135deg, #07111f, #12263d);
-        color: #eaf4ff;
-        font-family: Arial, sans-serif;
-      }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexora AI - Autonomous Coding Agent</title>
+  <meta name="description" content="Secure, token-efficient autonomous coding agent built for the Nebius x NVIDIA Global AI Hackathon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #080d1a;
+      --bg-surface: rgba(18, 26, 47, 0.75);
+      --bg-surface-elevated: rgba(28, 38, 66, 0.85);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(56, 189, 248, 0.4);
+      --accent-cyan: #38bdf8;
+      --accent-blue: #3b82f6;
+      --accent-emerald: #10b981;
+      --accent-amber: #f59e0b;
+      --accent-rose: #f43f5e;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-dim: #64748b;
+      --font-sans: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
 
-      .card {
-        background: rgba(255, 255, 255, 0.06);
-        border: 1px solid rgba(255, 255, 255, 0.12);
-        border-radius: 16px;
-        padding: 40px 60px;
-        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.25);
-        text-align: center;
-      }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-      h1 {
-        margin: 0;
-        font-size: 2.6rem;
-        letter-spacing: 0.05em;
-      }
+    body {
+      background-color: var(--bg-dark);
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.12) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(59, 130, 246, 0.1) 0px, transparent 50%),
+        radial-gradient(at 50% 50%, rgba(16, 185, 129, 0.05) 0px, transparent 60%);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      line-height: 1.5;
+    }
 
-      p {
-        margin-top: 12px;
-        font-size: 1rem;
-        color: #b8d8ff;
+    /* Top Navigation Header */
+    header {
+      padding: 1.25rem 2.5rem;
+      border-bottom: 1px solid var(--border-subtle);
+      background: rgba(8, 13, 26, 0.8);
+      backdrop-filter: blur(12px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      color: white;
+      font-size: 1.2rem;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    }
+
+    .brand-info h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(to right, #ffffff, #93c5fd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand-info span {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .status-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      background: rgba(16, 185, 129, 0.1);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      color: #34d399;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--accent-emerald);
+      box-shadow: 0 0 8px var(--accent-emerald);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.4; transform: scale(0.9); }
+    }
+
+    /* Main Container */
+    main {
+      flex: 1;
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 2rem 2.5rem;
+      display: grid;
+      grid-template-columns: 460px 1fr;
+      gap: 2rem;
+    }
+
+    @media (max-width: 1024px) {
+      main {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
       }
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <h1>Nexora</h1>
-      <p>the secure coding agent</p>
+    }
+
+    /* Glassmorphism Cards */
+    .glass-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      backdrop-filter: blur(16px);
+      padding: 1.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .glass-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.15), transparent);
+    }
+
+    .card-title {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 1.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--text-main);
+    }
+
+    .card-title span.tag {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.5rem;
+      background: rgba(56, 189, 248, 0.15);
+      border: 1px solid rgba(56, 189, 248, 0.3);
+      color: var(--accent-cyan);
+      border-radius: 6px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    /* Forms & Inputs */
+    .form-group {
+      margin-bottom: 1.15rem;
+    }
+
+    label {
+      display: block;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 0.45rem;
+      letter-spacing: 0.02em;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      background: rgba(10, 16, 32, 0.6);
+      border: 1px solid var(--border-subtle);
+      border-radius: 10px;
+      padding: 0.75rem 1rem;
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.9rem;
+      transition: all 0.2s ease;
+    }
+
+    input:focus, textarea:focus, select:focus {
+      outline: none;
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 12px rgba(56, 189, 248, 0.25);
+      background: rgba(15, 23, 42, 0.8);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1.5rem;
+      border-radius: 10px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+      border: none;
+      font-family: inherit;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, #0284c7, #2563eb);
+      color: white;
+      box-shadow: 0 4px 15px rgba(37, 99, 235, 0.35);
+      width: 100%;
+    }
+
+    .btn-primary:hover {
+      background: linear-gradient(135deg, #0369a1, #1d4ed8);
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(37, 99, 235, 0.45);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-main);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-danger {
+      background: rgba(244, 63, 94, 0.15);
+      border: 1px solid rgba(244, 63, 94, 0.3);
+      color: #fda4af;
+    }
+
+    .btn-danger:hover {
+      background: rgba(244, 63, 94, 0.25);
+    }
+
+    .btn-sm {
+      padding: 0.4rem 0.85rem;
+      font-size: 0.8rem;
+    }
+
+    /* Pipeline 11-Stage Visualization */
+    .pipeline-container {
+      margin-bottom: 1.5rem;
+    }
+
+    .pipeline-stages {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.85rem;
+    }
+
+    .stage-chip {
+      padding: 0.35rem 0.75rem;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      font-weight: 500;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-dim);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+
+    .stage-chip.active {
+      background: rgba(56, 189, 248, 0.15);
+      border-color: var(--accent-cyan);
+      color: var(--accent-cyan);
+      box-shadow: 0 0 14px rgba(56, 189, 248, 0.3);
+      transform: scale(1.04);
+      font-weight: 600;
+    }
+
+    .stage-chip.completed {
+      background: rgba(16, 185, 129, 0.1);
+      border-color: rgba(16, 185, 129, 0.3);
+      color: #34d399;
+    }
+
+    .stage-chip.terminal-cancelled {
+      background: rgba(244, 63, 94, 0.15);
+      border-color: rgba(244, 63, 94, 0.4);
+      color: #fda4af;
+    }
+
+    /* Live Output & Analysis Terminal */
+    .terminal-box {
+      background: #040812;
+      border: 1px solid var(--border-subtle);
+      border-radius: 12px;
+      padding: 1.25rem;
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: #cbd5e1;
+      max-height: 480px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+    }
+
+    .badge-pill {
+      font-size: 0.7rem;
+      font-family: var(--font-mono);
+      padding: 0.2rem 0.5rem;
+      border-radius: 6px;
+      display: inline-block;
+      margin-right: 0.35rem;
+      margin-bottom: 0.35rem;
+    }
+
+    .badge-blue { background: rgba(59, 130, 246, 0.15); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.3); }
+    .badge-amber { background: rgba(245, 158, 11, 0.15); color: #fbbf24; border: 1px solid rgba(245, 158, 11, 0.3); }
+    .badge-green { background: rgba(16, 185, 129, 0.15); color: #34d399; border: 1px solid rgba(16, 185, 129, 0.3); }
+
+    .diff-view {
+      background: #020617;
+      border-radius: 8px;
+      padding: 0.85rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: #94a3b8;
+      overflow-x: auto;
+      line-height: 1.4;
+      margin-top: 0.75rem;
+    }
+    .diff-add { color: #4ade80; }
+    .diff-del { color: #f87171; }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.8rem;
+      color: var(--text-dim);
+      border-top: 1px solid var(--border-subtle);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Header -->
+  <header>
+    <div class="brand">
+      <div class="brand-icon">N</div>
+      <div class="brand-info">
+        <h1>Nexora AI</h1>
+        <span>Secure Token-Bounded Coding Agent &bull; Nebius &times; NVIDIA 2026</span>
+      </div>
     </div>
-  </body>
+    <div class="header-actions">
+      <div id="backendHealthBadge" class="status-badge">
+        <div class="status-dot"></div>
+        <span id="healthText">Checking API...</span>
+      </div>
+      <a href="/docs" target="_blank" class="btn btn-secondary btn-sm" id="btnSwagger">OpenAPI Docs</a>
+    </div>
+  </header>
+
+  <!-- Main Body Layout -->
+  <main>
+    <!-- Left Column: Run Submission & Config -->
+    <section>
+      <div class="glass-card">
+        <div class="card-title">
+          <span>Task Submission</span>
+          <span class="tag">Azizullah Workstream</span>
+        </div>
+
+        <form id="createRunForm">
+          <div class="form-group">
+            <label for="repoSource">Repository Target</label>
+            <input type="text" id="repoSource" value="workspace://fixture-repo" required />
+          </div>
+
+          <div class="form-group">
+            <label for="taskDesc">Task Objective (Natural Language)</label>
+            <textarea id="taskDesc" required placeholder="e.g. Fix invalid password handling in auth handler and add regression pytest">Fix invalid password authentication handling and add regression test</textarea>
+          </div>
+
+          <div class="grid-2">
+            <div class="form-group">
+              <label for="maxSteps">Max Steps Budget</label>
+              <input type="number" id="maxSteps" value="40" min="5" max="100" />
+            </div>
+            <div class="form-group">
+              <label for="maxTokens">Context Token Ceiling</label>
+              <input type="number" id="maxTokens" value="50000" min="5000" max="100000" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="autonomy">Autonomy Profile</label>
+            <select id="autonomy">
+              <option value="sandboxed" selected>Sandboxed Isolation (Strict Policy)</option>
+              <option value="monitored">Monitored Evaluation</option>
+            </select>
+          </div>
+
+          <button type="submit" id="btnSubmitRun" class="btn btn-primary">
+            <span>&plus; Create &amp; Queue New Run</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Quick Run Actions -->
+      <div class="glass-card" style="margin-top: 1.5rem;">
+        <div class="card-title">
+          <span>Active Run Controls</span>
+          <span id="activeRunPill" class="tag" style="display: none;">Ready</span>
+        </div>
+        <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+          <button id="btnAdvanceStep" class="btn btn-secondary btn-sm" disabled>&rarr; Step Forward (Simulate)</button>
+          <button id="btnCancelRun" class="btn btn-danger btn-sm" disabled>&times; Cancel Run</button>
+          <button id="btnRefreshRun" class="btn btn-secondary btn-sm" disabled>&#8635; Refresh Status</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Right Column: State Machine Tracker & Live Execution State -->
+    <section>
+      <!-- 11-Stage Pipeline Progression -->
+      <div class="glass-card pipeline-container">
+        <div class="card-title">
+          <span>11-Stage State Machine Lifecycle</span>
+          <span id="currentStatusText" style="color: var(--accent-cyan); font-weight: 600; font-size: 0.85rem;">QUEUED</span>
+        </div>
+        <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.5rem;" id="activeStageMsg">
+          Awaiting task submission...
+        </p>
+
+        <div class="pipeline-stages" id="stagesContainer">
+          <div class="stage-chip" data-stage="QUEUED">QUEUED</div>
+          <div class="stage-chip" data-stage="ANALYZING">ANALYZING</div>
+          <div class="stage-chip" data-stage="SECURITY_REVIEW">SECURITY_REVIEW</div>
+          <div class="stage-chip" data-stage="PLANNING">PLANNING</div>
+          <div class="stage-chip" data-stage="CONTEXT_BUILD">CONTEXT_BUILD</div>
+          <div class="stage-chip" data-stage="MODEL_STEP">MODEL_STEP</div>
+          <div class="stage-chip" data-stage="POLICY_CHECK">POLICY_CHECK</div>
+          <div class="stage-chip" data-stage="EXECUTING">EXECUTING</div>
+          <div class="stage-chip" data-stage="VALIDATING">VALIDATING</div>
+          <div class="stage-chip" data-stage="COMPLETED">COMPLETED</div>
+        </div>
+      </div>
+
+      <!-- Live Inspection & Analysis Output -->
+      <div class="glass-card">
+        <div class="card-title">
+          <span>Live Inspection &amp; Task Analysis</span>
+          <span id="runIdLabel" style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--text-muted);">No active run</span>
+        </div>
+
+        <div id="analysisSummary" style="margin-bottom: 1rem; display: none;">
+          <div style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.4rem;">Proposed Capabilities:</div>
+          <div id="capabilitiesList"></div>
+          <div style="font-size: 0.8rem; color: var(--text-muted); margin: 0.6rem 0 0.4rem 0;">Target Acceptance Tests:</div>
+          <div id="testsList"></div>
+        </div>
+
+        <div class="terminal-box" id="jsonOutput">System initialized. Waiting for task run creation via POST /v1/runs...</div>
+
+        <!-- Generated Patch Diff Preview -->
+        <div id="diffContainer" style="display: none;">
+          <div style="font-size: 0.8rem; font-weight: 600; margin-top: 1rem; color: var(--accent-cyan);">Generated Sandbox Diff:</div>
+          <div class="diff-view" id="diffContent"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Nexora AI Engineering Team &bull; Azizullah (Backend &amp; Task Orchestration) &bull; Ghulam Qadir (Integration Lead)
+  </footer>
+
+  <script>
+    let activeRunId = null;
+    const stagesOrder = [
+      "QUEUED", "ANALYZING", "SECURITY_REVIEW", "PLANNING", 
+      "CONTEXT_BUILD", "MODEL_STEP", "POLICY_CHECK", "EXECUTING", 
+      "VALIDATING", "COMPLETED"
+    ];
+
+    // Health check ping on load
+    async function checkHealth() {
+      try {
+        const res = await fetch('/v1/health');
+        if (res.ok) {
+          const data = await res.json();
+          document.getElementById('healthText').innerText = `API ${data.status.toUpperCase()} (v${data.version})`;
+        } else {
+          document.getElementById('healthText').innerText = 'API Offline';
+        }
+      } catch (err) {
+        document.getElementById('healthText').innerText = 'API Offline (Local)';
+      }
+    }
+    checkHealth();
+    setInterval(checkHealth, 15000);
+
+    // Update Pipeline Stages Visuals
+    function updatePipelineUI(state, stageMsg) {
+      document.getElementById('currentStatusText').innerText = state;
+      document.getElementById('activeStageMsg').innerText = stageMsg || `Status: ${state}`;
+
+      const chips = document.querySelectorAll('.stage-chip');
+      const currentIndex = stagesOrder.indexOf(state);
+
+      chips.forEach((chip) => {
+        const chipStage = chip.getAttribute('data-stage');
+        chip.className = 'stage-chip';
+
+        if (state === 'CANCELLED') {
+          if (chipStage === 'QUEUED') chip.classList.add('completed');
+          chip.classList.add('terminal-cancelled');
+        } else if (state === 'COMPLETED') {
+          chip.classList.add('completed');
+        } else if (chipStage === state) {
+          chip.classList.add('active');
+        } else if (stagesOrder.indexOf(chipStage) < currentIndex) {
+          chip.classList.add('completed');
+        }
+      });
+    }
+
+    // Render Run Data in UI
+    function renderRunData(run) {
+      activeRunId = run.run_id;
+      document.getElementById('runIdLabel').innerText = `ID: ${run.run_id}`;
+      document.getElementById('activeRunPill').style.display = 'inline-block';
+      document.getElementById('activeRunPill').innerText = run.state;
+
+      // Enable control buttons
+      const isTerminal = ["COMPLETED", "FAILED", "BLOCKED", "CANCELLED"].includes(run.state);
+      document.getElementById('btnAdvanceStep').disabled = isTerminal;
+      document.getElementById('btnCancelRun').disabled = isTerminal;
+      document.getElementById('btnRefreshRun').disabled = false;
+
+      updatePipelineUI(run.state, run.active_stage);
+
+      // Render Task Analysis if available
+      if (run.plan && run.plan.task_analysis) {
+        document.getElementById('analysisSummary').style.display = 'block';
+        const caps = run.plan.task_analysis.required_capabilities || [];
+        document.getElementById('capabilitiesList').innerHTML = caps.map(c => `<span class="badge-pill badge-blue">${c}</span>`).join('');
+        
+        const tests = run.plan.task_analysis.acceptance_tests || [];
+        document.getElementById('testsList').innerHTML = tests.map(t => `<span class="badge-pill badge-amber">${t}</span>`).join('');
+      }
+
+      // Render Diff if available
+      if (run.diff) {
+        document.getElementById('diffContainer').style.display = 'block';
+        document.getElementById('diffContent').innerHTML = run.diff
+          .split('\n')
+          .map(line => {
+            if (line.startsWith('+')) return `<span class="diff-add">${escapeHtml(line)}</span>`;
+            if (line.startsWith('-')) return `<span class="diff-del">${escapeHtml(line)}</span>`;
+            return `<span>${escapeHtml(line)}</span>`;
+          })
+          .join('\n');
+      } else {
+        document.getElementById('diffContainer').style.display = 'none';
+      }
+
+      // JSON Terminal Inspector
+      document.getElementById('jsonOutput').innerText = JSON.stringify(run, null, 2);
+    }
+
+    function escapeHtml(text) {
+      return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    // Submit New Run Handler
+    document.getElementById('createRunForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const payload = {
+        repository: {
+          source: document.getElementById('repoSource').value,
+          revision: 'HEAD'
+        },
+        task: document.getElementById('taskDesc').value,
+        autonomy: document.getElementById('autonomy').value,
+        budgets: {
+          max_steps: parseInt(document.getElementById('maxSteps').value, 10),
+          max_input_tokens: parseInt(document.getElementById('maxTokens').value, 10),
+          timeout_seconds: 900
+        }
+      };
+
+      try {
+        const res = await fetch('/v1/runs', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}: ${await res.text()}`);
+        const data = await res.json();
+        renderRunData(data);
+      } catch (err) {
+        alert('Failed to create run: ' + err.message);
+      }
+    });
+
+    // Advance Run Handler
+    document.getElementById('btnAdvanceStep').addEventListener('click', async () => {
+      if (!activeRunId) return;
+      try {
+        const res = await fetch(`/v1/runs/${activeRunId}/advance`, { method: 'POST' });
+        if (!res.ok) throw new Error(await res.text());
+        const data = await res.json();
+        renderRunData(data);
+      } catch (err) {
+        alert('Advance error: ' + err.message);
+      }
+    });
+
+    // Cancel Run Handler
+    document.getElementById('btnCancelRun').addEventListener('click', async () => {
+      if (!activeRunId) return;
+      try {
+        const res = await fetch(`/v1/runs/${activeRunId}/cancel`, { method: 'POST' });
+        if (!res.ok) throw new Error(await res.text());
+        // Refresh run state
+        const getRes = await fetch(`/v1/runs/${activeRunId}`);
+        const data = await getRes.json();
+        renderRunData(data);
+      } catch (err) {
+        alert('Cancel error: ' + err.message);
+      }
+    });
+
+    // Refresh Run Handler
+    document.getElementById('btnRefreshRun').addEventListener('click', async () => {
+      if (!activeRunId) return;
+      try {
+        const res = await fetch(`/v1/runs/${activeRunId}`);
+        if (!res.ok) throw new Error(await res.text());
+        const data = await res.json();
+        renderRunData(data);
+      } catch (err) {
+        alert('Refresh error: ' + err.message);
+      }
+    });
+  </script>
+</body>
 </html>
