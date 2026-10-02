@@ -9,9 +9,10 @@ router = APIRouter(tags=["Health"])
 async def get_health():
     """
     Returns the system health status, service identity, and current timestamp.
+    status is "ok" — machine-readable liveness signal.
     """
     return HealthResponse(
-        status="healthy",
+        status="ok",
         service="nexora-backend",
         version="0.1.0"
     )
