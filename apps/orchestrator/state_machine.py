@@ -151,9 +151,8 @@ class InMemoryRunStore:
             if run_id not in self._runs:
                 raise KeyError(f"Run {run_id} not found")
             current = self._runs[run_id]
-            if current.state in {RunState.COMPLETED, RunState.FAILED, RunState.BLOCKED, RunState.CANCELLED}:
-                return current
-            
+            # Always validate — terminal states have no CANCELLED transition,
+            # so this raises InvalidStateTransitionError -> HTTP 409.
             RunStateMachine.validate_transition(current.state, RunState.CANCELLED)
             updated_dict = current.model_dump()
             updated_dict["state"] = RunState.CANCELLED
@@ -162,6 +161,7 @@ class InMemoryRunStore:
             new_run = RunResponse(**updated_dict)
             self._runs[run_id] = new_run
             return new_run
+
 
     def advance_mock_pipeline(self, run_id: str) -> RunResponse:
         """
