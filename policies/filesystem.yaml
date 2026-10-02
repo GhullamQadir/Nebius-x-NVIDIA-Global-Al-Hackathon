@@ -1,0 +1,47 @@
+version: "0.1"
+
+filesystem:
+  default: deny
+
+  allow:
+    - name: target_repository
+      root: "${REPO_ROOT}"
+      access:
+        - read
+        - write
+
+    - name: task_temp
+      root: "${TASK_TEMP}"
+      access:
+        - read
+        - write
+
+  deny:
+    - name: host_home
+      pattern: "${HOME}/**"
+      reason_code: HOST_HOME_ACCESS
+
+    - name: ssh_credentials
+      patterns:
+        - "${HOME}/.ssh/**"
+        - "**/.ssh/**"
+      reason_code: CREDENTIAL_ACCESS
+
+    - name: aws_credentials
+      patterns:
+        - "${HOME}/.aws/**"
+        - "**/.aws/**"
+      reason_code: CREDENTIAL_ACCESS
+
+    - name: system_files
+      patterns:
+        - "/etc/**"
+        - "/proc/**"
+        - "/sys/**"
+        - "/dev/**"
+        - "C:\\Windows\\**"
+        - "C:\\Program Files\\**"
+      reason_code: SYSTEM_ACCESS
+
+    - name: unrelated_repositories
+      reason_code: UNRELATED_REPOSITORY

@@ -1,0 +1,34 @@
+version: "0.1"
+
+commands:
+  default: deny
+
+  low:
+    - ls
+    - cat
+    - pwd
+    - echo
+    - git.status
+    - git.diff
+    - git.branch
+    - pytest
+    - python -m pytest
+
+  medium:
+    - pip install
+    - npm install
+    - docker build
+    - python -m pip
+
+  high:
+    - git.push
+    - network.configure
+    - unknown.package.source
+
+  critical:
+    - credential.access
+    - host.escape
+    - raw.disk.operation
+    - destructive.filesystem.operation
+    - rm -rf /
+    - format

@@ -1,0 +1,24 @@
+version: "0.1"
+
+git:
+  status:
+    decision: ALLOW
+
+  diff:
+    decision: ALLOW
+
+  branch:
+    decision: ALLOW
+
+  log:
+    decision: ALLOW
+
+  commit:
+    decision: REQUIRE_APPROVAL
+
+  push:
+    decision: REQUIRE_APPROVAL
+    human_required: true
+
+  remote_change:
+    decision: DENY

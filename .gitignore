@@ -1,0 +1,17 @@
+# Python cache and byte-code
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Pytest / Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment / IDE
+.venv/
+venv/
+ENV/
+.idea/
+.vscode/
+*.swp

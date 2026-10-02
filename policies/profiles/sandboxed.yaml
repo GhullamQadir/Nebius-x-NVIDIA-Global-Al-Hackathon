@@ -1,0 +1,18 @@
+version: "0.1"
+
+profile_name: sandboxed
+description: Default sandbox policy profile with default-deny rules and human oversight for high-risk operations.
+
+filesystem_policy: filesystem.yaml
+command_policy: commands.yaml
+network_policy: network.yaml
+git_policy: git.yaml
+
+default_decision: DENY
+
+approval:
+  required_for:
+    - HIGH
+    - CRITICAL
+    - git.push
+    - external_side_effect

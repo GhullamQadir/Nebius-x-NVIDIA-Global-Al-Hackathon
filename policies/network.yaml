@@ -1,0 +1,21 @@
+version: "0.1"
+
+network:
+  default: deny
+
+  allowed_destinations:
+    - github.com
+    - api.github.com
+    - pypi.org
+    - files.pythonhosted.org
+    - npmjs.org
+    - registry.npmjs.org
+    - approved_git_host
+    - approved_package_mirror
+    - nebius_api
+    - approved_documentation_source
+
+  enforcement:
+    proxy_required: true
+    direct_socket_access: false
+    alternate_dns: false
