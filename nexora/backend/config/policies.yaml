@@ -1,0 +1,149 @@
+# Nexora Policy Configuration
+# Version: 3.0 | Updated: 3 October 2026
+# This file defines the policy rules for the Policy Engine
+
+version: "1.0.0"
+default_decision: "DENY"
+
+# Protected paths - never writable
+protected_paths:
+  - ".env"
+  - ".env.*"
+  - "*.key"
+  - "*.pem"
+  - "*.p12"
+  - "*.pfx"
+  - "id_rsa"
+  - "id_ed25519"
+  - "authorized_keys"
+  - "config/policies.yaml"
+  - "config/policies/*.yaml"
+  - "*.sql"
+  - "migrations/*"
+  - ".git/*"
+  - "__pycache__/*"
+  - "*.pyc"
+
+# Commands that are always denied
+denied_commands:
+  - "rm -rf"
+  - "rm -rf /"
+  - "dd"
+  - "mkfs"
+  - "fdisk"
+  - "shutdown"
+  - "reboot"
+  - "curl"
+  - "wget"
+  - "nc"
+  - "netcat"
+  - "ssh"
+  - "scp"
+  - "rsync"
+  - "git push"
+  - "git push --force"
+  - "git push -f"
+  - "sudo"
+  - "su"
+  - "chmod 777"
+  - "chown root"
+
+# Commands allowed in demo profile
+allowed_commands:
+  - "python"
+  - "python3"
+  - "pytest"
+  - "pip"
+  - "pip3"
+  - "cat"
+  - "ls"
+  - "find"
+  - "grep"
+  - "head"
+  - "tail"
+  - "wc"
+  - "diff"
+  - "patch"
+  - "git status"
+  - "git diff"
+  - "git log"
+  - "git branch"
+  - "git show"
+  - "git add"
+  - "git commit"
+
+# Capabilities that require explicit approval
+approval_required_capabilities:
+  - "git.commit"
+  - "git.push"
+  - "shell.run"
+  - "network.fetch"
+
+# Capabilities that are allowed but monitored
+monitoring_capabilities:
+  - "repo.write"
+  - "test.run"
+  - "web.scrape"
+
+# Explicit rules (evaluated in order)
+rules:
+  # Repository read operations - always allowed
+  - capability: "repo.list"
+    decision: "ALLOW"
+    reason_codes: ["READ_ONLY"]
+  
+  - capability: "repo.read"
+    decision: "ALLOW"
+    reason_codes: ["READ_ONLY"]
+  
+  # Repository write - monitored
+  - capability: "repo.write"
+    decision: "ALLOW_WITH_MONITORING"
+    reason_codes: ["MODIFIES_CODE"]
+    conditions:
+      path_prefix: "test_"  # Extra scrutiny for test files
+  
+  # Test execution - monitored
+  - capability: "test.run"
+    decision: "ALLOW_WITH_MONITORING"
+    reason_codes: ["EXECUTES_CODE"]
+  
+  # Web scrape operations - read-only web content extraction
+  - capability: "web.scrape"
+    decision: "ALLOW_WITH_MONITORING"
+    reason_codes: ["READ_ONLY_WEB"]
+  
+  # Git read operations - allowed
+  - capability: "git.status"
+    decision: "ALLOW"
+    reason_codes: ["READ_ONLY"]
+  
+  - capability: "git.diff"
+    decision: "ALLOW"
+    reason_codes: ["READ_ONLY"]
+  
+  - capability: "git.branch"
+    decision: "ALLOW"
+    reason_codes: ["READ_ONLY"]
+  
+  # Git write operations - require approval
+  - capability: "git.commit"
+    decision: "REQUIRE_APPROVAL"
+    reason_codes: ["MODIFIES_HISTORY"]
+  
+  - capability: "git.push"
+    decision: "DENY"
+    reason_codes: ["EXTERNAL_EGRESS", "NOT_IN_MVP"]
+  
+  # Shell execution - require approval (denied in demo)
+  - capability: "shell.run"
+    decision: "REQUIRE_APPROVAL"
+    reason_codes: ["ARBITRARY_COMMAND"]
+    conditions:
+      risk_level: "high"
+  
+  # Network - denied in MVP
+  - capability: "network.fetch"
+    decision: "DENY"
+    reason_codes: ["NO_EGRESS_IN_MVP"]
+

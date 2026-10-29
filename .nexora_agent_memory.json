@@ -1,0 +1,1480 @@
+{
+  "runs": [
+    {
+      "run_id": "b2d96a3e-a400-4ebd-a777-c55d78850dbb",
+      "objective": "hi",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:25:44.331222+00:00"
+    },
+    {
+      "run_id": "3e63bd4f-1505-4601-b3c1-222aa87752cd",
+      "objective": "create a proper portfolio website for me \n\n# About Me — Azizullah Memon\n\n## Personal Introduction\n\nMy name is Azizullah Memon. I am interested in Artificial Intelligence (AI), Machine Learning (ML), Deep Learning, software development, and building practical AI-powered applications.\n\nI enjoy exploring new technologies, developing software projects, experimenting with AI tools, and improving the security and reliability of intelligent systems. My interests include AI coding agents, multimodal AI, automated software testing, and real-world problem-solving through technology.\n\nMy goal is to develop practical technical skills and build useful, reliable, and innovative software solutions.\n\n## Technical Interests\n\nMy main technical interests include:\n\n- Artificial Intelligence and Machine Learning\n- Deep Learning and Artificial Neural Networks\n- AI-powered software applications\n- AI coding agents and autonomous development tools\n- AI agent security and secure software engineering\n- Prompt-injection detection and security policy enforcement\n- Automated software testing and quality assurance\n- Multimodal AI and image-based search\n- Product search, recommendation, and ranking systems\n- Python development and software engineering\n\nThese are my areas of interest and project work. My proficiency in each technology should be established from my actual implementation experience rather than assumed.\n\n## Project 1: AI Coding Agent Security\n\nI have been working on a security-hardening project for a web-based AI coding agent that uses the Nebius API.\n\nThe objective is to improve the security and reliability of an AI agent that assists with coding tasks while preserving existing functionality.\n\nThe project focuses on:\n\n- Centralized tool routing and policy enforcement.\n- Authorization checks before sensitive operations.\n- Fail-closed security decisions.\n- Scoped and expiring approval workflows.\n- Prompt-injection detection in repository content.\n- Protection and redaction of sensitive information and secrets.\n- Safer command execution and test-running behavior.\n- Security testing and regression prevention.\n- End-to-end verification across multiple implementation phases.\n\nAn important design principle is that the AI model should not receive unrestricted access to the host environment. Sensitive file operations, command execution, network requests, and Git operations should be controlled through appropriate routing and policy mechanisms.\n\nThe project emphasizes secure implementation, compatibility with existing functionality, careful testing, and evidence-based security reporting.\n\nThe final implementation status, completed security controls, and test results must be confirmed against the actual repository and final test reports before being presented as completed achievements.\n\n## Project 2: Pakistan Multimodal AI Product Search Engine\n\nI have developed a project concept for a Pakistan-focused multimodal AI product search engine.\n\nThe goal is to help users discover, compare, and evaluate products through text-based and image-based search.\n\nFor example, a user could search for earbuds under PKR 3,000 and receive a ranked comparison that considers product price, available discounts, delivery charges, availability, quality indicators, and user preferences.\n\nThe proposed system aims to:\n\n- Support text-based product discovery.\n- Identify products from uploaded images.\n- Find similar products and alternatives.\n- Compare prices across supported marketplaces and websites.\n- Calculate the effective cost, including delivery charges and applicable discounts.\n- Rank relevant products using suitable search and recommendation techniques.\n- Present the top results in an understandable comparison report.\n- Address the needs of users shopping in Pakistan, with a focus on PKR and local market considerations.\n\nThe proposed technical direction includes pretrained computer-vision models, deep-learning techniques, information retrieval, and ranking algorithms.\n\nThis project is intended to address the difficulty of comparing products across different sources while considering the actual cost and relevance to local users.\n\nIts current status should be described as a concept or proposal unless implementation evidence establishes that a working prototype or completed system exists.\n\n## Development Environment and Tools\n\nI use a Windows-based development environment and have explored configuring Python development with Anaconda and Google Antigravity.\n\nI am interested in managing Python versions, maintaining compatible development environments, selecting suitable libraries, and avoiding unnecessary duplicate installations.\n\nI have also explored local AI model tools and coding-agent workflows as part of my development setup.\n\nSpecific tools, frameworks, and programming languages should be included in my final skills section only when supported by my actual experience or project files.\n\n## Development Approach\n\nMy approach to technical projects emphasizes:\n\n- Solving practical problems.\n- Breaking complex implementations into manageable phases.\n- Preserving existing functionality while making improvements.\n- Running automated tests after implementation changes.\n- Identifying vulnerabilities and edge cases.\n- Verifying fixes with regression tests.\n- Maintaining clear technical documentation.\n- Producing final reports that distinguish completed work from outstanding issues.\n\nI want my projects to demonstrate not only the use of AI technologies but also an understanding of reliability, software quality, security, and responsible implementation.\n\n## Professional Goals\n\nI aim to strengthen my skills in AI engineering, machine learning, deep learning, software development, and secure AI applications.\n\nI am interested in building practical AI systems that solve real problems, exploring emerging technologies, and developing projects that demonstrate technical ability through working implementations and verifiable results.\n\nI want my portfolio to showcase my learning journey, technical interests, projects, and professional development in a clear and credible manner.\n\n## Portfolio Requirements\n\nWhen creating my personal portfolio:\n\n1. Present me professionally without inventing personal details or achievements.\n2. Highlight my AI coding-agent security work and Pakistan Multimodal AI Product Search Engine concept.\n3. Distinguish implemented projects from proposals and work in progress.\n4. Include only skills supported by actual evidence or explicitly supplied information.\n5. Add project repository links and live demos only when their destinations are available and verified.\n6. Include education, experience, certifications, and achievements only when their details are known.\n7. Use a modern, responsive, accessible design.\n8. Make project descriptions understandable to recruiters, developers, and technical reviewers.\n9. Avoid fabricated statistics, testimonials, proficiency scores, or professional experience.\n10. Clearly identify missing information instead of filling gaps with assumptions.\n\n## Important Information Limitations\n\nThe information above summarizes my previously discussed interests, project concepts, and development activities. It does not independently establish my academic degree, current semester, employment history, certifications, awards, exact technical proficiency, or the final completion status of my projects.\n\nDo not assume these details. Ask me for missing information when it is necessary, or leave the relevant portfolio section unpublished until the information is available.\n\nUse this information as the initial foundation for my professional portfolio and refine it when I provide additional verified details.",
+      "status": "completed",
+      "tools_used": [
+        "repo_write"
+      ],
+      "output_tokens": 1570,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:27:36.726129+00:00"
+    },
+    {
+      "run_id": "799a79b8-4ee0-4981-b08b-941d0da9d0f9",
+      "objective": "Create a simple calculator in Python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 499,
+      "truncated": true,
+      "error": null,
+      "timestamp": "2026-10-25T09:28:59.114793+00:00"
+    },
+    {
+      "run_id": "3e4a1e07-82d2-43ff-84cd-07b6e3fcd960",
+      "objective": "where it the index.html file",
+      "status": "completed",
+      "tools_used": [
+        "repo_list"
+      ],
+      "output_tokens": 160,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:29:32.138278+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:52:38.892412+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:52:38.956752+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:52:38.998437+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:52:39.047774+00:00"
+    },
+    {
+      "run_id": "6a3a2cf7-2bd8-45a9-b636-1e8ed5c8dcc2",
+      "objective": "Create a simple calculator in Python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 2048,
+      "truncated": true,
+      "error": null,
+      "timestamp": "2026-10-25T09:52:44.093575+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:57:05.156351+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:57:05.206015+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:57:05.243430+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:57:05.289070+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:57:26.728659+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:57:26.782215+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:57:26.828957+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:57:26.882275+00:00"
+    },
+    {
+      "run_id": "bd53dea6-44b7-46de-b323-bc1b8cbff504",
+      "objective": "# About Me — Azizullah Memon\n\n## Personal Introduction\n\nMy name is Azizullah Memon. I am interested in Artificial Intelligence (AI), Machine Learning (ML), Deep Learning, software development, and building practical AI-powered applications.\n\nI enjoy exploring new technologies, developing software projects, experimenting with AI tools, and improving the security and reliability of intelligent systems. My interests include AI coding agents, multimodal AI, automated software testing, and real-world problem-solving through technology.\n\nMy goal is to develop practical technical skills and build useful, reliable, and innovative software solutions.\n\n## Technical Interests\n\nMy main technical interests include:\n\n- Artificial Intelligence and Machine Learning\n- Deep Learning and Artificial Neural Networks\n- AI-powered software applications\n- AI coding agents and autonomous development tools\n- AI agent security and secure software engineering\n- Prompt-injection detection and security policy enforcement\n- Automated software testing and quality assurance\n- Multimodal AI and image-based search\n- Product search, recommendation, and ranking systems\n- Python development and software engineering\n\nThese are my areas of interest and project work. My proficiency in each technology should be established from my actual implementation experience rather than assumed.\n\n## Project 1: AI Coding Agent Security\n\nI have been working on a security-hardening project for a web-based AI coding agent that uses the Nebius API.\n\nThe objective is to improve the security and reliability of an AI agent that assists with coding tasks while preserving existing functionality.\n\nThe project focuses on:\n\n- Centralized tool routing and policy enforcement.\n- Authorization checks before sensitive operations.\n- Fail-closed security decisions.\n- Scoped and expiring approval workflows.\n- Prompt-injection detection in repository content.\n- Protection and redaction of sensitive information and secrets.\n- Safer command execution and test-running behavior.\n- Security testing and regression prevention.\n- End-to-end verification across multiple implementation phases.\n\nAn important design principle is that the AI model should not receive unrestricted access to the host environment. Sensitive file operations, command execution, network requests, and Git operations should be controlled through appropriate routing and policy mechanisms.\n\nThe project emphasizes secure implementation, compatibility with existing functionality, careful testing, and evidence-based security reporting.\n\nThe final implementation status, completed security controls, and test results must be confirmed against the actual repository and final test reports before being presented as completed achievements.\n\n## Project 2: Pakistan Multimodal AI Product Search Engine\n\nI have developed a project concept for a Pakistan-focused multimodal AI product search engine.\n\nThe goal is to help users discover, compare, and evaluate products through text-based and image-based search.\n\nFor example, a user could search for earbuds under PKR 3,000 and receive a ranked comparison that considers product price, available discounts, delivery charges, availability, quality indicators, and user preferences.\n\nThe proposed system aims to:\n\n- Support text-based product discovery.\n- Identify products from uploaded images.\n- Find similar products and alternatives.\n- Compare prices across supported marketplaces and websites.\n- Calculate the effective cost, including delivery charges and applicable discounts.\n- Rank relevant products using suitable search and recommendation techniques.\n- Present the top results in an understandable comparison report.\n- Address the needs of users shopping in Pakistan, with a focus on PKR and local market considerations.\n\nThe proposed technical direction includes pretrained computer-vision models, deep-learning techniques, information retrieval, and ranking algorithms.\n\nThis project is intended to address the difficulty of comparing products across different sources while considering the actual cost and relevance to local users.\n\nIts current status should be described as a concept or proposal unless implementation evidence establishes that a working prototype or completed system exists.\n\n## Development Environment and Tools\n\nI use a Windows-based development environment and have explored configuring Python development with Anaconda and Google Antigravity.\n\nI am interested in managing Python versions, maintaining compatible development environments, selecting suitable libraries, and avoiding unnecessary duplicate installations.\n\nI have also explored local AI model tools and coding-agent workflows as part of my development setup.\n\nSpecific tools, frameworks, and programming languages should be included in my final skills section only when supported by my actual experience or project files.\n\n## Development Approach\n\nMy approach to technical projects emphasizes:\n\n- Solving practical problems.\n- Breaking complex implementations into manageable phases.\n- Preserving existing functionality while making improvements.\n- Running automated tests after implementation changes.\n- Identifying vulnerabilities and edge cases.\n- Verifying fixes with regression tests.\n- Maintaining clear technical documentation.\n- Producing final reports that distinguish completed work from outstanding issues.\n\nI want my projects to demonstrate not only the use of AI technologies but also an understanding of reliability, software quality, security, and responsible implementation.\n\n## Professional Goals\n\nI aim to strengthen my skills in AI engineering, machine learning, deep learning, software development, and secure AI applications.\n\nI am interested in building practical AI systems that solve real problems, exploring emerging technologies, and developing projects that demonstrate technical ability through working implementations and verifiable results.\n\nI want my portfolio to showcase my learning journey, technical interests, projects, and professional development in a clear and credible manner.\n\n## Portfolio Requirements\n\nWhen creating my personal portfolio:\n\n1. Present me professionally without inventing personal details or achievements.\n2. Highlight my AI coding-agent security work and Pakistan Multimodal AI Product Search Engine concept.\n3. Distinguish implemented projects from proposals and work in progress.\n4. Include only skills supported by actual evidence or explicitly supplied information.\n5. Add project repository links and live demos only when their destinations are available and verified.\n6. Include education, experience, certifications, and achievements only when their details are known.\n7. Use a modern, responsive, accessible design.\n8. Make project descriptions understandable to recruiters, developers, and technical reviewers.\n9. Avoid fabricated statistics, testimonials, proficiency scores, or professional experience.\n10. Clearly identify missing information instead of filling gaps with assumptions.\n\n## Important Information Limitations\n\nThe information above summarizes my previously discussed interests, project concepts, and development activities. It does not independently establish my academic degree, current semester, employment history, certifications, awards, exact technical proficiency, or the final completion status of my projects.\n\nDo not assume these details. Ask me for missing information when it is necessary, or leave the relevant portfolio section unpublished until the information is available.\n\nUse this information as the initial foundation for my professional portfolio and refine it when I provide additional verified details.\n\nNow make a portfolio landing page with this information.",
+      "status": "completed",
+      "tools_used": [
+        "repo_write"
+      ],
+      "output_tokens": 2779,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:57:31.019515+00:00"
+    },
+    {
+      "run_id": "72347aab-c24d-436e-bedb-3d1ac382b7fb",
+      "objective": "where is the index.html",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 70,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:59:03.678354+00:00"
+    },
+    {
+      "run_id": "aec25ae0-83d4-4bb3-a331-a35ef4efe4dc",
+      "objective": "show me code in code section",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 2183,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T09:59:52.401740+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T10:35:34.107402+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T10:35:34.136853+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T10:35:34.159347+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T10:35:34.183014+00:00"
+    },
+    {
+      "run_id": "1486e8f6-b531-4362-b4a7-b8c55dd2b9f7",
+      "objective": "hi",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 331,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T10:56:31.123938+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:00:40.730955+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:00:40.775373+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:00:40.810927+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:00:40.855414+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:00:54.087776+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:00:54.127704+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:00:54.164404+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:00:54.201651+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:01:09.585015+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:01:09.624132+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:01:09.660596+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:01:09.700274+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:01:21.681760+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:01:21.722104+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:01:21.755464+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:01:21.785907+00:00"
+    },
+    {
+      "run_id": "45ff34ad-5499-4c09-8acc-8d3077671d85",
+      "objective": "generate the code na",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 157,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:02:23.719135+00:00"
+    },
+    {
+      "run_id": "192bb16a-ae7d-427f-a5bd-d0371ea53691",
+      "objective": "all things",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 222,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:02:47.846611+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:04:59.954133+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:05:00.014002+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:05:00.059448+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:05:00.117349+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:05:21.280884+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:05:21.325313+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:05:21.360220+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:05:21.401316+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:05:55.379224+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:05:55.453862+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:05:55.499129+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:05:55.545138+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:06:19.213570+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:06:19.271433+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:06:19.323235+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:06:19.380650+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:30:25.651620+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:30:25.716326+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:30:25.769272+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:30:25.826517+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:30:48.774117+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:30:48.831650+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:30:48.874541+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:30:48.925865+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:31:21.934254+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:31:21.991844+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:31:22.043496+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:31:22.099289+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:31:44.115525+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:31:44.173499+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:31:44.221471+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T11:31:44.268600+00:00"
+    },
+    {
+      "run_id": "1cae065d-af2f-45d6-b425-48e45e46a9ba",
+      "objective": "ok create an html css and javascript portfolio page by using sample knowledge but also add proper animation ui and transitions and animation in proper manner",
+      "status": "completed",
+      "tools_used": [
+        "repo_write",
+        "repo_write",
+        "repo_write",
+        "repo_write",
+        "repo_write",
+        "repo_write"
+      ],
+      "output_tokens": 24576,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:01:33.444762+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:02:32.021485+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:02:32.110758+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:02:32.163090+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:02:32.212019+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:02:52.460085+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:02:52.517530+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:02:52.566708+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:02:52.615160+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:03:18.652297+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:03:18.715195+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:03:18.768207+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:03:18.816974+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:03:39.095032+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:03:39.159667+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:03:39.206584+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:03:39.277883+00:00"
+    },
+    {
+      "run_id": "478a9064-09f6-4055-bf2d-5635081e3755",
+      "objective": "where is code of html",
+      "status": "completed",
+      "tools_used": [
+        "repo_list",
+        "repo_write",
+        "repo_write",
+        "repo_list",
+        "repo_write",
+        "repo_write"
+      ],
+      "output_tokens": 2180,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:03:45.772268+00:00"
+    },
+    {
+      "run_id": "95e8cf85-1480-45c8-b5de-babad71fc22f",
+      "objective": "explain the concept of set",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 2048,
+      "truncated": true,
+      "error": null,
+      "timestamp": "2026-10-25T12:04:12.263318+00:00"
+    },
+    {
+      "run_id": "62905298-bba6-4d28-9b9a-7f71d65cbe6d",
+      "objective": "Generate a code of Python in which write about the 7 days of the week in loop.",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 76,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:06:47.403824+00:00"
+    },
+    {
+      "run_id": "c48782dc-42e2-45df-a5bc-babffc0a494a",
+      "objective": "now do in rust",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 90,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:07:16.995073+00:00"
+    },
+    {
+      "run_id": "ec93d4e0-df8d-4dda-a8ec-6e961aec3177",
+      "objective": "now create a complete e commerce website",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 5454,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T12:08:10.177891+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T15:15:29.735489+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T15:15:29.757595+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T15:15:29.773395+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T15:15:29.787262+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T15:16:08.635032+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T15:16:08.668427+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T15:16:08.696543+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T15:16:08.725701+00:00"
+    },
+    {
+      "run_id": "74531d8b-6b09-4f21-b428-37859247f49b",
+      "objective": "hi",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 312,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T15:17:56.368326+00:00"
+    },
+    {
+      "run_id": "56cf7831-e6af-42b6-acb4-dfbc76fc9d6f",
+      "objective": "[Attached Project Files & Context:\n--- Document: maslay.docx (68584 bytes) ---\nDOCX document with 1 paragraphs and 1 tables.\n\n[Table 1]\n\n| Add this section into upper right side of the ui under the theme toggle and remove the text words like (Split, Chat, Project) only remain icons only.     Color contrast ko set karo inn button kay , kyun k dark mode mein theek kaam kartay hain lekin light mode mein ye color issue araha hai, iska ye issue fix karo button kay colors.     Chat history mein ye numbers 6h ago , 5h ago ye hard coded hain ye fix karo, means k jab koi chat start howi ho iskay actual numbers he show karay k kitna time pehle ye chat initialize howi thi.     ye blue color ka dot a raha hai na isko remove karo bs.       Export mein pdf option to theek hai , lekin CSV ke jagha .md format support karay aur json format bhi support karay. |\n]\n\nTask:\nread this and explain this file in simple workding",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 477,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T15:18:53.970245+00:00"
+    },
+    {
+      "run_id": "ea262eb9-a335-412a-89b8-5f93fc2d5a8b",
+      "objective": "explain in detail",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 2048,
+      "truncated": true,
+      "error": null,
+      "timestamp": "2026-10-25T15:19:53.857848+00:00"
+    },
+    {
+      "run_id": "fc86c116-80e4-48f7-a350-02a91c596335",
+      "objective": "hi",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 376,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-25T15:47:32.734342+00:00"
+    },
+    {
+      "run_id": "4430c046-8f29-49b6-b3ca-cb93c9d9b4b3",
+      "objective": "Write a python function to compute fibonacci numbers with an intentional syntax error to test healing",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 271,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T10:04:01.081916+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T10:32:35.342830+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T10:32:35.434316+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T10:32:35.475114+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T10:32:35.507654+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T10:34:32.797051+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T10:34:32.837514+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T10:34:32.866783+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T10:34:32.901516+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T10:34:47.953086+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T10:34:47.989518+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T10:34:48.026551+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T10:34:48.066837+00:00"
+    },
+    {
+      "run_id": "06d3c704-6e6d-48e0-8e9f-716716994c41",
+      "objective": "Write a python function for matrix multiplication test #1793010852 with an intentional syntax error on line 3",
+      "status": "completed",
+      "tools_used": [
+        "repo_write"
+      ],
+      "output_tokens": 509,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T10:35:01.978955+00:00"
+    },
+    {
+      "run_id": "91ed4df3-80e8-424d-82ed-4d6d5d268932",
+      "objective": "create a html css portfolio for my page i just give me demo code as i want to take just idea add animation ui motions etc",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 16384,
+      "truncated": true,
+      "error": null,
+      "timestamp": "2026-10-26T12:03:49.242429+00:00"
+    },
+    {
+      "run_id": "607b488c-1ddf-481c-a278-207f15275400",
+      "objective": "ok generate an html css and javascript in proper manner",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 11572,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T12:08:56.886170+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T12:50:07.602581+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T12:50:07.684627+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T12:50:07.722163+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T12:50:07.759682+00:00"
+    },
+    {
+      "run_id": "3225562c-0a0b-4468-927f-92bbdf2bec99",
+      "objective": "hello",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 245,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-26T12:55:02.786804+00:00"
+    },
+    {
+      "run_id": "ee2cdb35-b439-43cd-b8ad-f550c2d63d5e",
+      "objective": "Generate a Python code We can around by around 7 days of the week.",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 284,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-28T12:33:11.359815+00:00"
+    },
+    {
+      "run_id": "655c291f-2fe7-4d23-9aa9-2a712273822a",
+      "objective": "OK now gener landing page we're just my name Azizullah Memon.",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 12,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-28T12:33:58.704054+00:00"
+    },
+    {
+      "run_id": "ec71c710-dfad-4af0-94a3-c714f7e5c122",
+      "objective": "Write it.",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 2048,
+      "truncated": true,
+      "error": null,
+      "timestamp": "2026-10-28T12:34:38.319622+00:00"
+    },
+    {
+      "run_id": "b5aa9fa7-8d6b-47b7-b047-b8b2b788342d",
+      "objective": "No write in the code section here in chat.",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 2048,
+      "truncated": true,
+      "error": null,
+      "timestamp": "2026-10-28T12:35:12.467725+00:00"
+    },
+    {
+      "run_id": "0e882964-d0fa-42c3-9218-e506c55c476e",
+      "objective": "No i mean write in the code section , not here in chat.",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 4096,
+      "truncated": true,
+      "error": null,
+      "timestamp": "2026-10-28T12:36:05.266468+00:00"
+    },
+    {
+      "run_id": "272857f7-8e05-4b2e-ab83-c8bbb69006ca",
+      "objective": "hi",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 326,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-28T13:38:08.329255+00:00"
+    },
+    {
+      "run_id": "9250c241-ca39-4932-acbb-75dcdfd97640",
+      "objective": "Generate a code for a landing page where write a name azizullah memon",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 708,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-28T13:39:06.246708+00:00"
+    },
+    {
+      "run_id": "run-test-syntax-healing",
+      "objective": "Create a calculate function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-28T14:41:31.754847+00:00"
+    },
+    {
+      "run_id": "run-test-targeted-healing",
+      "objective": "Create calculator.py with add function",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 30,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-28T14:41:32.783393+00:00"
+    },
+    {
+      "run_id": "run-test-clean",
+      "objective": "Write greet function in python",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 25,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-28T14:41:32.836109+00:00"
+    },
+    {
+      "run_id": "run-test-html-web",
+      "objective": "i want to create 3d animation website so give me code one by one",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 80,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-28T14:41:32.900583+00:00"
+    },
+    {
+      "run_id": "a51ffd20-412e-45ba-a6ed-3446e0bfb6f8",
+      "objective": "Give me two sentences introducing Nexora to a new developer.",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 42,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-28T16:22:16.768085+00:00"
+    },
+    {
+      "run_id": "9af8ed98-8ee7-410b-861b-beb4085d511a",
+      "objective": "Give me two sentences introducing Nexora to a new developer.",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 42,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-28T16:32:41.811348+00:00"
+    },
+    {
+      "run_id": "53f3adc8-a8bd-4593-87e0-c79a0eec7735",
+      "objective": "Explain how Nexora keeps coding work reviewable and helps developers inspect a task response.",
+      "status": "completed",
+      "tools_used": [],
+      "output_tokens": 42,
+      "truncated": false,
+      "error": null,
+      "timestamp": "2026-10-28T17:26:07.309392+00:00"
+    }
+  ],
+  "tool_success": {
+    "repo_write": {
+      "success": 13,
+      "failure": 0,
+      "total": 13
+    },
+    "repo_list": {
+      "success": 3,
+      "failure": 0,
+      "total": 3
+    }
+  },
+  "patterns": {},
+  "created_at": "2026-10-25T09:25:44.331196+00:00"
+}

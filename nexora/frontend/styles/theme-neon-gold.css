@@ -1,0 +1,473 @@
+/*
+ Nexora Custom Theme — Neon Blue + Gold
+ Dark & light modes built on the Odysseus token contract.
+ Loaded after styles/odysseus.css so these values win.
+
+ Contract: every colour used by the shell resolves through one of these
+ variables. Nothing in odysseus.css hardcodes a hex.
+ ========================================================================== */
+
+/* ============================================================
+   DARK MODE (DEFAULT) — Deep navy + neon blue + gold
+   ============================================================ */
+:root {
+  /* Core palette */
+  --bg: #070c16;
+  --bg-2: #0b1220;
+  --fg: #dcecfa;
+  --panel: #0e1626;
+  --panel-2: #121d31;
+  --border: #1d2c47;
+  --border-strong: #2a4370;
+  --accent: #00d4ff;         /* NEON BLUE */
+  --accent-strong: #66f2ff;
+  --gold: #ffd700;           /* GOLD */
+  --gold-2: #ffe680;
+  --gold-muted: #b58900;
+
+  /* Semantic */
+  --red: #ff5d7a;
+  --green: #00ff9d;
+  --warn: #ffb020;
+  --danger: #ff4d5e;
+  --success: #00ff9d;
+  --color-error: #ff5d7a;
+  --color-error-light: #ff8aa0;
+  --color-success: #00ff9d;
+  --color-warning: #ffb020;
+  --color-danger: #ff4d5e;
+  --color-muted: #6f86a8;
+  --color-muted-alt: #4d6180;
+  --color-accent: #00d4ff;
+  --color-agent-active: #00ff9d;
+  --color-brand-blue: #00d4ff;
+  --color-blind-orange: #ffb020;
+  --color-save-green: #00ff9d;
+  --color-link-hover: #8af6ff;
+  --color-subheader: #5b7ba8;
+  --color-recording: #ff3b5c;
+  --color-recording-hover: #d81f42;
+
+  /* Syntax */
+  --hl-bg: #0a1220;
+  --hl-fg: #dcecfa;
+  --hl-keyword: #00d4ff;
+  --hl-string: #ffd700;
+  --hl-comment: #55709a;
+  --hl-function: #66f2ff;
+  --hl-number: #ffb020;
+  --hl-builtin: #00ff9d;
+  --hl-variable: #a9c4e6;
+  --hl-params: #8aa6cc;
+
+  /* Accents for theming engine */
+  --accent-primary: #00d4ff;
+  --accent-error: #ff5d7a;
+  --accent-warm: #ffd700;
+
+  /* Selects */
+  --select-bg: #16233a;
+  --select-fg: #dcecfa;
+  --select-option-bg: #101a2c;
+  --select-option-fg: #dcecfa;
+  --select-option-active-bg: #00d4ff2e;
+
+  /* Chat bubbles */
+  --user-bubble-bg: #00d4ff17;
+  --ai-bubble-bg: #0f1a2c;
+  --bubble-border: #1d2c47;
+
+  /* Input */
+  --input-bg: #0b1220;
+  --input-border: #22375c;
+  --send-btn-bg: linear-gradient(135deg, #00d4ff 0%, #0090c8 100%);
+  --send-btn-hover: linear-gradient(135deg, #66f2ff 0%, #00d4ff 100%);
+
+  /* Controls */
+  --toggle-bg: #1d2c47;
+  --toggle-active: #00d4ff;
+
+  /* Code */
+  --code-bg: #0a1220;
+  --code-fg: #dcecfa;
+
+  /* Sidebar */
+  --sidebar-bg: var(--panel);
+
+  /* Background effect */
+  --bg-effect-color: #00d4ff;
+  --bg-effect-intensity: 0.4;
+
+  /* Glow dials (0 → 1) written by js/ui/theme.js */
+  --glow-alpha: 0.55;
+  --gold-glow-alpha: 0.45;
+  --motion-scale: 1;
+
+  scrollbar-color: #1e3a5f #0e1626;
+  scrollbar-width: thin;
+}
+
+/* ============================================================
+   LIGHT MODE — Pale blue paper + neon blue ink + dark gold
+   ============================================================ */
+:root.light {
+  --bg: #eef4fc;
+  --bg-2: #e4edf9;
+  --fg: #0b1c33;
+  --panel: #ffffff;
+  --panel-2: #f6f9fe;
+  --border: #c9dcf3;
+  --border-strong: #9dbfe4;
+  --accent: #0072c6;
+  --accent-strong: #004e93;
+  /* Darker than the dark-mode gold: light surfaces need a deep gold/olive to
+     clear 4.5:1 as small text (tags, stat values, role labels, rail icons). */
+  --gold: #8a6400;
+  --gold-2: #6f5100;
+  --gold-muted: #8a6400;
+
+  --red: #cc3355;
+  --green: #00875a;
+  --warn: #b26b00;
+  --danger: #cc2b3d;
+  --success: #00875a;
+  --color-error: #cc3355;
+  --color-error-light: #e05a76;
+  --color-success: #00875a;
+  --color-warning: #b26b00;
+  --color-danger: #cc2b3d;
+  --color-muted: #4e6b96;
+  --color-muted-alt: #6b87ae;
+  --color-accent: #0072c6;
+  --color-agent-active: #00875a;
+  --color-brand-blue: #0072c6;
+  --color-blind-orange: #b26b00;
+  --color-save-green: #00875a;
+  --color-link-hover: #004e93;
+  --color-subheader: #41618f;
+  --color-recording: #cc2b3d;
+  --color-recording-hover: #a81f2e;
+
+  --hl-bg: #f4f8fd;
+  --hl-fg: #0b1c33;
+  --hl-keyword: #0072c6;
+  --hl-string: #8a6a00;
+  --hl-comment: #6b87ad;
+  --hl-function: #004e93;
+  --hl-number: #b26b00;
+  --hl-builtin: #007755;
+  --hl-variable: #33507a;
+  --hl-params: #47679b;
+
+  --accent-primary: #0072c6;
+  --accent-error: #cc3355;
+  --accent-warm: #b58900;
+
+  --select-bg: #ffffff;
+  --select-fg: #0b1c33;
+  --select-option-bg: #ffffff;
+  --select-option-fg: #0b1c33;
+  --select-option-active-bg: #0072c61f;
+
+  --user-bubble-bg: #0072c614;
+  --ai-bubble-bg: #ffffff;
+  --bubble-border: #c9dcf3;
+
+  --input-bg: #ffffff;
+  --input-border: #b9d2ec;
+  --send-btn-bg: linear-gradient(135deg, #0072c6 0%, #004e93 100%);
+  --send-btn-hover: linear-gradient(135deg, #1a8ede 0%, #0072c6 100%);
+
+  --toggle-bg: #d3e3f6;
+  --toggle-active: #0072c6;
+
+  --code-bg: #f4f8fd;
+  --code-fg: #0b1c33;
+
+  --sidebar-bg: var(--panel);
+
+  --bg-effect-color: #0072c6;
+  --bg-effect-intensity: 0.28;
+
+  scrollbar-color: #9dbfe4 #ffffff;
+  scrollbar-width: thin;
+}
+
+/* ============================================================
+   FONTS
+   ============================================================ */
+:root {
+  --font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: ui-monospace, 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Fira Code', monospace;
+  --font-sans: var(--font-family);
+}
+
+/* Code + data surfaces use the mono stack */
+pre, code, .mono, .kv-grid dd.mono, .st-value code {
+  font-family: var(--font-mono);
+}
+
+/* ============================================================
+   DENSITY / TEXT SCALE
+   ============================================================ */
+:root.density-compact { font-size: 13px; }
+:root.density-compact .msg { padding: 7px 10px; margin-bottom: 4px; }
+:root.density-compact .list-item { padding: 3px 7px; }
+:root.density-spacious { font-size: 15px; }
+:root.density-spacious .msg { padding: 13px 17px; margin-bottom: 12px; }
+:root.density-spacious .list-item { padding: 7px 10px; }
+
+:root.ui-scale-125 { zoom: 1.25; }
+:root.ui-scale-125 body { height: calc(100dvh / 1.25); }
+:root.ui-scale-125 .modal-content { max-height: calc(86dvh / 1.25); }
+
+/* ============================================================
+   HIGH CONTRAST (toggleable + OS preference)
+   ============================================================ */
+:root.hc {
+  --border: #7fe9ff;
+  --border-strong: #b6f3ff;
+  --color-muted: #9fdcf5;
+  --color-muted-alt: #74c4e2;
+}
+:root.light.hc {
+  --border: #003d73;
+  --color-muted: #003d73;
+  --color-muted-alt: #00548f;
+}
+
+@media (prefers-contrast: high) {
+  :root {
+    --border: #7fe9ff;
+    --color-muted: #9fdcf5;
+  }
+  :root.light {
+    --border: #003d73;
+    --color-muted: #003d73;
+  }
+}
+
+/* ============================================================
+   REDUCED MOTION
+   ============================================================ */
+@media (prefers-reduced-motion: reduce) {
+  :root { --motion-scale: 0; }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+:root.no-motion *,
+:root.no-motion *::before,
+:root.no-motion *::after {
+  animation-duration: 0.001ms !important;
+  animation-iteration-count: 1 !important;
+  transition-duration: 0.001ms !important;
+}
+
+/* ============================================================
+   BACKGROUND PATTERNS
+   ============================================================ */
+body.bg-pattern-dots {
+  background-image: radial-gradient(
+    color-mix(in srgb, var(--bg-effect-color) calc(9% * var(--bg-effect-intensity)), transparent) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+  background-attachment: fixed;
+}
+body.bg-pattern-grid {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--bg-effect-color) calc(7% * var(--bg-effect-intensity)), transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--bg-effect-color) calc(7% * var(--bg-effect-intensity)), transparent) 1px, transparent 1px);
+  background-size: 28px 28px;
+  background-attachment: fixed;
+}
+body.bg-pattern-synapse {
+  background-image:
+    radial-gradient(color-mix(in srgb, var(--accent) calc(16% * var(--bg-effect-intensity)), transparent) 1px, transparent 1px),
+    linear-gradient(color-mix(in srgb, var(--bg-effect-color) calc(5% * var(--bg-effect-intensity)), transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--bg-effect-color) calc(5% * var(--bg-effect-intensity)), transparent) 1px, transparent 1px);
+  background-size: 120px 120px, 30px 30px, 30px 30px;
+  background-attachment: fixed;
+}
+
+/* ============================================================
+   NEON BLUE + GOLD GLOW UTILITIES
+   ============================================================ */
+.neon-glow {
+  box-shadow:
+    0 0 calc(6px * var(--glow-alpha)) var(--accent),
+    0 0 calc(14px * var(--glow-alpha)) var(--accent),
+    0 0 calc(30px * var(--glow-alpha)) var(--accent);
+}
+.neon-glow-gold {
+  box-shadow:
+    0 0 calc(6px * var(--gold-glow-alpha)) var(--gold),
+    0 0 calc(14px * var(--gold-glow-alpha)) var(--gold),
+    0 0 calc(30px * var(--gold-glow-alpha)) var(--gold);
+}
+.neon-text { text-shadow: 0 0 calc(7px * var(--glow-alpha)) var(--accent), 0 0 calc(16px * var(--glow-alpha)) var(--accent); }
+.neon-text-gold { text-shadow: 0 0 calc(7px * var(--gold-glow-alpha)) var(--gold), 0 0 calc(16px * var(--gold-glow-alpha)) var(--gold); }
+.neon-border { border-color: var(--accent); box-shadow: 0 0 calc(4px * var(--glow-alpha)) var(--accent); }
+.neon-border-gold { border-color: var(--gold); box-shadow: 0 0 calc(4px * var(--gold-glow-alpha)) var(--gold); }
+
+/* ============================================================
+   FOCUS / SELECTION
+   ============================================================ */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+::selection {
+  background: color-mix(in srgb, var(--accent) 30%, transparent);
+  color: var(--fg);
+}
+
+/* ============================================================
+   COMPONENT SKIN
+   ============================================================ */
+
+/* Scrollbars */
+@supports selector(::-webkit-scrollbar) {
+  ::-webkit-scrollbar { width: 9px; height: 9px; }
+  ::-webkit-scrollbar-track { background: transparent; }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--accent) 38%, var(--border));
+    border-radius: 5px;
+  }
+  ::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+}
+
+/* Rail */
+.icon-rail { background: linear-gradient(180deg, var(--panel) 0%, var(--bg-2) 100%); }
+.icon-rail-btn.active-section {
+  box-shadow:
+    inset 0 0 0 1px color-mix(in srgb, var(--accent) 55%, transparent),
+    0 0 calc(12px * var(--glow-alpha)) color-mix(in srgb, var(--accent) 45%, transparent);
+}
+.icon-rail-btn[data-tool="theme"] { color: var(--gold); }
+.icon-rail-btn[data-tool="settings"] { color: var(--color-muted); }
+.icon-rail-btn[data-tool="settings"]:hover { color: var(--accent); }
+
+/* Sidebar */
+.sidebar {
+  background: linear-gradient(180deg, var(--panel) 0%, var(--bg-2) 100%);
+  border-right: 1px solid var(--border);
+}
+.sidebar-brand-title { color: var(--accent); text-shadow: 0 0 calc(12px * var(--glow-alpha)) color-mix(in srgb, var(--accent) 60%, transparent); }
+.sidebar-brand-title .gold,
+.welcome-name .gold,
+.loader-mark .gold { color: var(--gold); text-shadow: 0 0 calc(12px * var(--gold-glow-alpha)) color-mix(in srgb, var(--gold) 65%, transparent); }
+.list-item.active { box-shadow: inset 2px 0 0 var(--accent); }
+.list-item.item-gold .grow { color: var(--gold); }
+.sidebar-user-bar { background: color-mix(in srgb, var(--bg) 55%, var(--panel)); }
+
+/* Chat */
+.chat-container { background: linear-gradient(180deg, color-mix(in srgb, var(--panel) 22%, transparent) 0%, transparent 30%); }
+.chat-meta-title { color: color-mix(in srgb, var(--fg) 72%, transparent); letter-spacing: 0.06em; }
+.chat-cost { color: var(--gold); border-color: color-mix(in srgb, var(--gold) 45%, transparent); }
+
+.msg-user { border-color: color-mix(in srgb, var(--accent) 40%, transparent); }
+.msg-ai { border-color: var(--bubble-border); }
+.msg-gold {
+  border-color: color-mix(in srgb, var(--gold) 50%, transparent);
+  box-shadow: 0 0 calc(18px * var(--gold-glow-alpha)) color-mix(in srgb, var(--gold) 16%, transparent);
+}
+.msg-gold .role { color: var(--gold); }
+.msg-gold .role::before { background: var(--gold); box-shadow: 0 0 calc(8px * var(--gold-glow-alpha)) var(--gold); }
+
+.welcome-name { color: var(--accent); text-shadow: 0 0 calc(20px * var(--glow-alpha)) color-mix(in srgb, var(--accent) 65%, transparent); }
+.welcome-chip:hover { box-shadow: 0 0 calc(14px * var(--glow-alpha)) color-mix(in srgb, var(--accent) 30%, transparent); }
+.welcome-tip { border-color: color-mix(in srgb, var(--gold) 40%, var(--border)); color: var(--color-muted); }
+
+/* Composer */
+.chat-input-bar { background: var(--input-bg); }
+.chat-input-bar:focus-within {
+  border-color: var(--accent);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--accent) 40%, transparent),
+    0 0 calc(26px * var(--glow-alpha)) color-mix(in srgb, var(--accent) 16%, transparent);
+}
+body.policy-locked .chat-input-bar,
+.chat-input-bar.glow-gold {
+  border-color: color-mix(in srgb, var(--gold) 60%, transparent);
+  box-shadow: 0 0 calc(20px * var(--gold-glow-alpha)) color-mix(in srgb, var(--gold) 14%, transparent);
+}
+.send-btn { box-shadow: 0 0 calc(12px * var(--glow-alpha)) color-mix(in srgb, var(--accent) 50%, transparent); }
+.send-btn.stop-mode { box-shadow: 0 0 calc(14px * var(--gold-glow-alpha)) color-mix(in srgb, var(--danger) 55%, transparent); }
+.budget-chip { color: var(--gold); border-color: color-mix(in srgb, var(--gold) 48%, transparent); background: color-mix(in srgb, var(--gold) 10%, transparent); }
+.model-picker-btn:hover { box-shadow: 0 0 calc(10px * var(--glow-alpha)) color-mix(in srgb, var(--accent) 40%, transparent); }
+
+/* Modals */
+.modal { background: color-mix(in srgb, var(--bg) 76%, transparent); }
+.modal-content {
+  background: linear-gradient(180deg, var(--panel) 0%, var(--bg-2) 100%);
+  border-color: var(--border-strong);
+  box-shadow:
+    0 26px 76px rgba(0, 0, 0, 0.6),
+    0 0 calc(34px * var(--glow-alpha)) color-mix(in srgb, var(--accent) 14%, transparent);
+}
+.modal-title { color: var(--accent); }
+.modal-header { border-bottom-color: var(--border); }
+.admin-tab.active { color: var(--accent); }
+.admin-tab.gold-tab.active { color: var(--gold); }
+.admin-card { background: color-mix(in srgb, var(--panel) 70%, var(--bg)); border-color: var(--border); }
+.admin-card > h3 { color: var(--color-muted); }
+
+/* Data surfaces */
+.stat-tile { background: color-mix(in srgb, var(--accent) 6%, var(--panel)); border-color: var(--border); }
+.stat-tile .st-value { color: var(--accent); }
+.stat-tile.gold { background: color-mix(in srgb, var(--gold) 8%, var(--panel)); }
+.stat-tile.gold .st-value { color: var(--gold); }
+.tag-gold, .tag-quarantine { color: var(--gold); background: color-mix(in srgb, var(--gold) 12%, transparent); }
+.plan-label { color: var(--accent); background: color-mix(in srgb, var(--accent) 16%, transparent); }
+.meter-fill { background: linear-gradient(90deg, var(--accent), var(--accent-strong)); }
+.meter-fill.gold { background: linear-gradient(90deg, var(--gold-muted), var(--gold)); }
+.row-card { background: color-mix(in srgb, var(--bg) 32%, var(--panel)); border-color: var(--border); }
+pre.code-block, .code-shell { background: var(--hl-bg); border-color: var(--border); }
+.diff-add { color: var(--color-success); background: color-mix(in srgb, var(--color-success) 11%, transparent); }
+.diff-del { color: var(--color-danger); background: color-mix(in srgb, var(--color-danger) 11%, transparent); }
+.diff-hunk { color: var(--accent); }
+
+/* Command palette */
+.cmdk { border-color: var(--border-strong); }
+.cmdk-item.sel { background: color-mix(in srgb, var(--accent) 16%, transparent); box-shadow: inset 2px 0 0 var(--accent); }
+.cmdk-item.gold .ico { color: var(--gold); }
+
+/* Toasts */
+.toast { background: var(--panel); border-color: var(--border); box-shadow: 0 12px 34px rgba(0, 0, 0, 0.5); }
+.toast.gold { border-left-color: var(--gold); }
+
+/* Loader */
+#app-loader {
+  background:
+    radial-gradient(900px 420px at 50% 40%, color-mix(in srgb, var(--accent) 9%, transparent), transparent 70%),
+    var(--bg);
+}
+.loader-mark { color: var(--accent); text-shadow: 0 0 calc(22px * var(--glow-alpha)) color-mix(in srgb, var(--accent) 65%, transparent); }
+.loader-bar i { background: linear-gradient(90deg, transparent, var(--accent), var(--gold), transparent); }
+
+/* Typing dots */
+.typing i { background: var(--accent); box-shadow: 0 0 calc(7px * var(--glow-alpha)) var(--accent); }
+
+/* Light-mode touch-ups: flatter gradients, quieter glows */
+:root.light .sidebar { background: linear-gradient(180deg, #ffffff 0%, var(--bg-2) 100%); }
+:root.light .chat-container { background: none; }
+:root.light .icon-rail { background: linear-gradient(180deg, #ffffff 0%, var(--bg-2) 100%); }
+:root.light .modal-content { background: var(--panel); }
+:root.light .admin-card { background: var(--panel-2); }
+:root.light .msg-gold { box-shadow: 0 0 12px color-mix(in srgb, var(--gold) 14%, transparent); }
+:root.light .send-btn { box-shadow: 0 0 10px color-mix(in srgb, var(--accent) 35%, transparent); }
+:root.light .list-item.active, :root.light .list-item-wrapper.active { box-shadow: inset 3px 0 0 var(--accent); background: #e2e8f0; }
+:root.light .list-item-wrapper.active .list-item { color: var(--fg); font-weight: 600; }
+:root.light .list-item-wrapper:hover { background: #f1f5f9; }
+:root.light .list-item-wrapper:hover .list-item { color: var(--fg); }
+
+/* Component fallbacks referenced by odysseus.css */
+:root {
+  --hamburger-color: var(--fg);
+  --modal-max-height: 86vh;
+  --modal-content-max-height: 86vh;
+}

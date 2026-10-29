@@ -1,0 +1,42 @@
+[
+  {
+    "id": "TC001",
+    "title": "listworkspaces_success",
+    "description": "Verify that GET /api/v1/workspaces returns 200 with a list of authorized workspaces when accessed with valid context."
+  },
+  {
+    "id": "TC002",
+    "title": "createworkspace_success",
+    "description": "Verify that POST /api/v1/workspaces with valid workspace data returns 200 with the created Workspace object."
+  },
+  {
+    "id": "TC003",
+    "title": "listworkspaces_unauthorized",
+    "description": "Verify that GET /api/v1/workspaces with invalid or unauthorized access context returns an error response such as 401 or 403 and no workspace data."
+  },
+  {
+    "id": "TC004",
+    "title": "createworkspace_validationerror",
+    "description": "Verify that POST /api/v1/workspaces with malformed payload returns a 4xx validation error and does not create a workspace."
+  },
+  {
+    "id": "TC005",
+    "title": "createrun_success",
+    "description": "Verify that POST /api/v1/runs with valid workspace_id, revision, task, acceptance criteria, autonomy, routing mode, and budgets returns 200 with a Run record."
+  },
+  {
+    "id": "TC006",
+    "title": "startrun_success",
+    "description": "Verify that POST /api/v1/runs/{id}/start for an existing queued/planning run returns 200 with the run state updated to execution."
+  },
+  {
+    "id": "TC007",
+    "title": "createrun_validationerror",
+    "description": "Verify that POST /api/v1/runs with missing required fields or invalid budget values returns a 4xx validation error and does not create a run."
+  },
+  {
+    "id": "TC008",
+    "title": "startrun_invalidrunerror",
+    "description": "Verify that POST /api/v1/runs/{id}/start for a nonexistent, unauthorized, or already terminal run returns a 4xx or 403 error and the run state remains unchanged."
+  }
+]

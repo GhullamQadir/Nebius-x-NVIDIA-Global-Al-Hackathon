@@ -1,0 +1,37 @@
+# Nexora Backend Dependencies
+# Core
+fastapi==0.109.0
+uvicorn[standard]==0.34.0
+pydantic==2.13.5
+pydantic-settings==2.7.1
+python-multipart==0.0.6
+
+# Database
+sqlalchemy[asyncio]==2.1.4
+aiosqlite==0.20.0
+asyncpg==0.30.0
+alembic==1.13.1
+
+# HTTP Client
+httpx==0.26.0
+
+# Configuration
+pyyaml==6.0.2
+
+# Utilities
+python-dotenv==1.0.0
+email-validator==2.1.0.post1
+pypdf>=4.0.0
+python-docx>=1.1.0
+
+# Development
+# pytest >= 8.2 is required by pytest-asyncio 0.24.0.
+pytest==8.4.1
+# pytest-asyncio>=0.24.0 is required on Python 3.14+ to avoid asyncio deprecation
+# warnings (asyncio.iscoroutinefunction was removed in 3.16).
+pytest-asyncio==0.24.0
+pytest-cov==4.1.0
+
+# Type checking
+mypy==1.14.1
+types-requests==2.31.0.0

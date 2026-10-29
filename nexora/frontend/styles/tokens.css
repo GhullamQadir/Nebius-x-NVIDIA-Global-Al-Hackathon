@@ -1,0 +1,107 @@
+/*
+Nexora Design Tokens
+Centralized design system tokens
+Version: 3.1 | Updated: 3 October 2026
+*/
+
+:root {
+  /* Colors */
+  --bg: #efefee;
+  --bg-elevated: #f7f5f3;
+  --surface: rgba(255, 255, 255, 0.76);
+  --surface-raised: rgba(245, 244, 241, 0.96);
+  --surface-strong: #f8f7f4;
+  --border: rgba(15, 23, 42, 0.12);
+  --text: #111111;
+  --text-muted: #4b4f57;
+  --accent: #6c5cf0;
+  --accent-strong: #2bc3ee;
+  --accent-soft: rgba(108, 92, 240, 0.12);
+  --accent-ink: #ffffff;
+  --link: #2b6ec9;
+  --success: #1e9f5f;
+  --warning: #d4a133;
+  --danger: #de5d7c;
+  --focus: #7c6cff;
+
+  /* Typography */
+  --font-ui: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-code: ui-monospace, "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  /* Font Sizes */
+  --text-page-title: 28px;
+  --text-section-title: 20px;
+  --text-panel-title: 16px;
+  --text-body: 16px;
+  --text-compact: 14px;
+  --text-metadata: 13px;
+  --text-code: 13px;
+  --text-metric: 24px;
+
+  /* Line Heights */
+  --lh-page-title: 36px;
+  --lh-section-title: 28px;
+  --lh-panel-title: 24px;
+  --lh-body: 24px;
+  --lh-compact: 20px;
+  --lh-metadata: 18px;
+  --lh-code: 20px;
+  --lh-metric: 32px;
+
+  /* Font Weights */
+  --fw-bold: 700;
+  --fw-semibold: 600;
+  --fw-medium: 500;
+  --fw-regular: 400;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-12: 48px;
+
+  /* Border Radius */
+  --radius-control: 8px;
+  --radius-card: 12px;
+  --radius-dialog: 16px;
+
+  /* Shadows */
+  --shadow-menu: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-dialog: 0 8px 24px rgba(0, 0, 0, 0.4);
+
+  /* Transitions */
+  --transition-fast: 120ms;
+  --transition-normal: 180ms;
+
+  /* Z-index */
+  --z-header: 100;
+  --z-dropdown: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+
+  /* Layout */
+  --header-height: 64px;
+  --nav-width: 220px;
+  --inspection-width: 300px;
+  --main-min-width: 520px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  :root {
+    --border: #94A3B8;
+    --text-muted: #CBD5E1;
+  }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0ms;
+    --transition-normal: 0ms;
+  }
+}
+
