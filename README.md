@@ -33,7 +33,7 @@ Built for the **Nebius x NVIDIA Global AI Hackathon** · Coding and Agentic Engi
 ## Demo video
 
 <p align="center">
- **A security-first AI coding workspace that understands repository context, proposes changes, and validates every run.
+A security-first AI coding workspace that understands repository context, proposes changes, and validates every run.
 
 [**Demo video (1:37)**](https://drive.google.com/file/d/1EM_jArmjyEx4XNLnp4q8njjUdGnCo5XT/view?usp=sharing) ·
 Built for **Nebius x NVIDIA Global AI Hackathon* ·
