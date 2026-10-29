@@ -33,13 +33,11 @@ Built for the **Nebius x NVIDIA Global AI Hackathon** · Coding and Agentic Engi
 ## Demo video
 
 <p align="center">
- **A lost-child desk for crowded venues: malls, airports, stadiums, festivals.**
-AI agents run the search. A person approves every call that matters.
+ **A security-first AI coding workspace that understands repository context, proposes changes, and validates every run.
 
-[**Live app**](https://talaash-live-app.alternatefutures.ai) ·
-[**Demo video (2:46)**](https://drive.google.com/file/d/1xorVHMRTbd0yjJyrXn6qA5ZYee8apY4P/view?usp=sharing) ·
-Built for **Agentika 2.0 at NaSCon’26**, theme *Human + AI: Better Together* ·
-Deployed on **Alternate Clouds** (Clouds by Alternate Futures)
+[**Demo video (1:37)**]([https://drive.google.com/file/d/1xorVHMRTbd0yjJyrXn6qA5ZYee8apY4P/view?usp=sharing](https://drive.google.com/file/d/1EM_jArmjyEx4XNLnp4q8njjUdGnCo5XT/view?usp=sharing)) ·
+Built for **Nebius x NVIDIA Global AI Hackathon* ·
+
 </p>
 
 The narrated walkthrough shows the running Nexora workspace, its chat and project views, model routing, and appearance controls. It uses an isolated demo database and a scripted local response; no external model is called and no provider quota is used.
