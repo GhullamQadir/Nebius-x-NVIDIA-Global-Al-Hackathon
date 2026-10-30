@@ -61,7 +61,7 @@ Nexora is publicly deployed and accessible through the following live applicatio
 </p>
 
 <p align="center">
-  [Launch Nexora Live](https://azizullah-03-nexora-workspace.hf.space/)
+  Launch Nexora Live https://azizullah-03-nexora-workspace.hf.space/
 </p>
 
 The live deployment allows users and evaluators to explore the Nexora coding workspace directly through their browser without requiring local installation or manual configuration.
