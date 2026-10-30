@@ -35,12 +35,12 @@ Built for the **Nebius x NVIDIA Global AI Hackathon** · Coding and Agentic Engi
 <p align="center">
 A security-first AI coding workspace that understands repository context, proposes changes, and validates every run.
 
-[**Demo video (1:37)**](https://drive.google.com/file/d/1EM_jArmjyEx4XNLnp4q8njjUdGnCo5XT/view?usp=sharing) ·
+[**Demo video (1:37)**](https://drive.google.com/file/d/1GUr04nnthh-Tewl4Hc3vIdgiakU30RAS/view?usp=sharing) ·
 Built for *Nebius x NVIDIA Global AI Hackathon* ·
 
 <br>
 
-<a href="https://drive.google.com/file/d/1EM_jArmjyEx4XNLnp4q8njjUdGnCo5XT/view?usp=sharing" title="Watch the Nexora Demo Video on Google Drive">
+<a href="https://drive.google.com/file/d/1GUr04nnthh-Tewl4Hc3vIdgiakU30RAS/view?usp=sharing" title="Watch the Nexora Demo Video on Google Drive">
   <img src="nexora/demo/Screenshot%202.png" width="820" alt="Nexora Demo Video: click to play on Google Drive">
 </a>
 
