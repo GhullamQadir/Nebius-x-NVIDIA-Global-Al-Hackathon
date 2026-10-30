@@ -50,6 +50,28 @@ Built for *Nebius x NVIDIA Global AI Hackathon* ·
 
 The narrated walkthrough shows the running Nexora workspace, its chat and project views, model routing, and appearance controls. It uses an isolated demo database and a scripted local response; no external model is called and no provider quota is used.
 
+## Live Deployment
+
+Nexora is publicly deployed and accessible through the following live application:
+
+<p align="center">
+  <a href="https://azizullah-03-nexora-workspace.hf.space/">
+    <img src="https://img.shields.io/badge/🚀_Live_Demo-Open_Nexora-5B5BD6?style=for-the-badge" alt="Open Live Demo">
+  </a>
+</p>
+
+<p align="center">
+  **[Launch Nexora Live](https://azizullah-03-nexora-workspace.hf.space/)**
+</p>
+
+The live deployment allows users and evaluators to explore the Nexora coding workspace directly through their browser without requiring local installation or manual configuration.
+
+**Deployment Platform:** Hugging Face Spaces  
+**Application:** Nexora AI Coding Workspace  
+**Access:** Public Web Deployment
+
+> **Note:** Live inference capabilities depend on the deployment environment and configured model provider credentials. Some features may require valid backend configuration.
+
 ## Screenshots
 
 | Screen | Preview |
